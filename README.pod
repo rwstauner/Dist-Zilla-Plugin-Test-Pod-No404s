@@ -1,4 +1,10 @@
+=for :stopwords dists
+
 =head1 Dist::Zilla::Plugin::Test::Pod::No404s
+
+Add C<xt/release/pod-no404s.t>
+(a standard L<Test::Pod::No404s> test)
+to your dists.
 
 See module POD for more information.
 

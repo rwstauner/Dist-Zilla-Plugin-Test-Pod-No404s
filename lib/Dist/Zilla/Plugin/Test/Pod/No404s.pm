@@ -1,6 +1,6 @@
 # vim: set ts=2 sts=2 sw=2 expandtab smarttab:
 package Dist::Zilla::Plugin::Test::Pod::No404s;
-# ABSTRACT: undef
+# ABSTRACT: Add release tests for POD http links
 
 use strict;
 use warnings;
@@ -14,7 +14,33 @@ no Moose;
 
 =head1 SYNOPSIS
 
+  # dist.ini
+  [Test::Pod::No404s]
+
 =head1 DESCRIPTION
+
+This is an extension of L<Dist::Zilla::Plugin::InlineFiles>
+providing the following files:
+
+  xt/release/pod-no404s.t - a standard Test::Pod::No404s test
+
+You can skip the test by setting
+C<$ENV{SKIP_POD_NO404S}>
+or
+C<$ENV{AUTOMATED_TESTING}>.
+
+I elected to skip the 404 test with C<AUTOMATED_TESTING>
+because I don't want to run that test (and bother the network) often,
+but I do like to run my author and release tests
+before actually attempting C<dzil release>.
+
+So using C<dzil smoke> instead of C<dzil test>
+will skip the 404 network tests.
+
+=head1 SEE ALSO
+
+=for :list
+* L<Test::Pod::No404s>
 
 =cut
 

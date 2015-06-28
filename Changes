@@ -2,6 +2,9 @@ Revision history for Dist-Zilla-Plugin-Test-Pod-No404s
 
 {{$NEXT}}
 
+  - Add Test::Pod::No404s as a develop phase prereq on distros which use this
+    plugin. GH #1 (Dave Rolsky)
+
 1.001     2011-07-14T23:51:41Z
 
   - Superficial dist/release changes

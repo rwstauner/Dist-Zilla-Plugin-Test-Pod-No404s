@@ -26,6 +26,9 @@ no Moose;
 
 1;
 
+=for Pod::Coverage
+register_prereqs
+
 =head1 SYNOPSIS
 
   # dist.ini

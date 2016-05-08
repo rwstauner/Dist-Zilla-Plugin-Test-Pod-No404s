@@ -2,6 +2,9 @@ Revision history for Dist-Zilla-Plugin-Test-Pod-No404s
 
 {{$NEXT}}
 
+  - Make this an author test rather than a release test. It should pass on all
+    commits, not just before a release. GH #2 (Dave Rolsky)
+
 1.002     2015-07-03T17:56:24Z
 
   - Add Test::Pod::No404s as a develop phase prereq on distros which use this

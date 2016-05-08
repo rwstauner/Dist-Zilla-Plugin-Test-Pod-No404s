@@ -3,7 +3,7 @@ use strict;
 use warnings;
 
 package Dist::Zilla::Plugin::Test::Pod::No404s;
-# ABSTRACT: Add release tests for POD HTTP links
+# ABSTRACT: Add author tests for POD HTTP links
 
 use Moose;
 extends 'Dist::Zilla::Plugin::InlineFiles';
@@ -39,7 +39,7 @@ register_prereqs
 This is an extension of L<Dist::Zilla::Plugin::InlineFiles>
 providing the following files:
 
-  xt/release/pod-no404s.t - a standard Test::Pod::No404s test
+  xt/author/pod-no404s.t - a standard Test::Pod::No404s test
 
 You can skip the test by setting
 C<$ENV{SKIP_POD_NO404S}>
@@ -48,7 +48,7 @@ C<$ENV{AUTOMATED_TESTING}>.
 
 I elected to skip the 404 test with C<AUTOMATED_TESTING>
 because I don't want to run that test (and bother the network) often,
-but I do like to run my author and release tests
+but I do like to run my author and author tests
 before actually attempting C<dzil release>.
 
 So using C<dzil smoke> instead of C<dzil test>
@@ -62,7 +62,7 @@ will skip the 404 network tests.
 =cut
 
 __DATA__
-___[ xt/release/pod-no404s.t ]___
+___[ xt/author/pod-no404s.t ]___
 #!perl
 
 use strict;

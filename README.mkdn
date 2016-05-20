@@ -1,0 +1,82 @@
+# NAME
+
+Dist::Zilla::Plugin::Test::Pod::No404s - Add release tests for POD HTTP links
+
+# VERSION
+
+version 1.002
+
+# SYNOPSIS
+
+    # dist.ini
+    [Test::Pod::No404s]
+
+# DESCRIPTION
+
+This is an extension of [Dist::Zilla::Plugin::InlineFiles](https://metacpan.org/pod/Dist::Zilla::Plugin::InlineFiles)
+providing the following files:
+
+    xt/release/pod-no404s.t - a standard Test::Pod::No404s test
+
+You can skip the test by setting
+`$ENV{SKIP_POD_NO404S}`
+or
+`$ENV{AUTOMATED_TESTING}`.
+
+I elected to skip the 404 test with `AUTOMATED_TESTING`
+because I don't want to run that test (and bother the network) often,
+but I do like to run my author and release tests
+before actually attempting `dzil release`.
+
+So using `dzil smoke` instead of `dzil test`
+will skip the 404 network tests.
+
+# SEE ALSO
+
+- [Test::Pod::No404s](https://metacpan.org/pod/Test::Pod::No404s)
+
+# SUPPORT
+
+## Perldoc
+
+You can find documentation for this module with the perldoc command.
+
+    perldoc Dist::Zilla::Plugin::Test::Pod::No404s
+
+## Websites
+
+The following websites have more information about this module, and may be of help to you. As always,
+in addition to those websites please use your favorite search engine to discover more resources.
+
+- MetaCPAN
+
+    A modern, open-source CPAN search engine, useful to view POD in HTML format.
+
+    [http://metacpan.org/release/Dist-Zilla-Plugin-Test-Pod-No404s](http://metacpan.org/release/Dist-Zilla-Plugin-Test-Pod-No404s)
+
+## Bugs / Feature Requests
+
+Please report any bugs or feature requests by email to `bug-dist-zilla-plugin-test-pod-no404s at rt.cpan.org`, or through
+the web interface at [https://rt.cpan.org/Public/Bug/Report.html?Queue=Dist-Zilla-Plugin-Test-Pod-No404s](https://rt.cpan.org/Public/Bug/Report.html?Queue=Dist-Zilla-Plugin-Test-Pod-No404s). You will be automatically notified of any
+progress on the request by the system.
+
+## Source Code
+
+[https://github.com/rwstauner/Dist-Zilla-Plugin-Test-Pod-No404s](https://github.com/rwstauner/Dist-Zilla-Plugin-Test-Pod-No404s)
+
+    git clone https://github.com/rwstauner/Dist-Zilla-Plugin-Test-Pod-No404s.git
+
+# AUTHOR
+
+Randy Stauner <rwstauner@cpan.org>
+
+# CONTRIBUTOR
+
+Dave Rolsky <autarch@urth.org>
+
+# COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2011 by Randy Stauner.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.

@@ -1,6 +1,6 @@
 language: perl
 perl:
-  - "5.22"
+  - "5.20"
 
 env:
   global:
@@ -8,3 +8,5 @@ env:
 
 before_install:
   - eval $(curl https://travis-perl.github.io/init) --auto
+
+sudo: false

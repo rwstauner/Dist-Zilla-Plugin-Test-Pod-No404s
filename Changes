@@ -2,6 +2,8 @@ Revision history for Dist-Zilla-Plugin-Test-Pod-No404s
 
 {{$NEXT}}
 
+1.003     2016-05-22T04:25:31Z
+
   - Make this an author test rather than a release test. It should pass on all
     commits, not just before a release. GH #2 (Dave Rolsky)
 

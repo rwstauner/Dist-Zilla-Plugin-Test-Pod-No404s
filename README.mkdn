@@ -1,10 +1,14 @@
+[![Build Status](https://travis-ci.org/rwstauner/Dist-Zilla-Plugin-Test-Pod-No404s.svg?branch=master)](https://travis-ci.org/rwstauner/Dist-Zilla-Plugin-Test-Pod-No404s)
+[![Coverage Status](https://coveralls.io/repos/rwstauner/Dist-Zilla-Plugin-Test-Pod-No404s/badge.svg?branch=master)](https://coveralls.io/r/rwstauner/Dist-Zilla-Plugin-Test-Pod-No404s?branch=master)
+[![Kwalitee status](http://cpants.cpanauthors.org/dist/Dist-Zilla-Plugin-Test-Pod-No404s.png)](http://cpants.charsbar.org/dist/overview/Dist-Zilla-Plugin-Test-Pod-No404s)
+
 # NAME
 
-Dist::Zilla::Plugin::Test::Pod::No404s - Add release tests for POD HTTP links
+Dist::Zilla::Plugin::Test::Pod::No404s - Add author tests for POD HTTP links
 
 # VERSION
 
-version 1.002
+version 1.003
 
 # SYNOPSIS
 
@@ -16,7 +20,7 @@ version 1.002
 This is an extension of [Dist::Zilla::Plugin::InlineFiles](https://metacpan.org/pod/Dist::Zilla::Plugin::InlineFiles)
 providing the following files:
 
-    xt/release/pod-no404s.t - a standard Test::Pod::No404s test
+    xt/author/pod-no404s.t - a standard Test::Pod::No404s test
 
 You can skip the test by setting
 `$ENV{SKIP_POD_NO404S}`
@@ -25,7 +29,7 @@ or
 
 I elected to skip the 404 test with `AUTOMATED_TESTING`
 because I don't want to run that test (and bother the network) often,
-but I do like to run my author and release tests
+but I do like to run my author and author tests
 before actually attempting `dzil release`.
 
 So using `dzil smoke` instead of `dzil test`
@@ -68,11 +72,11 @@ progress on the request by the system.
 
 # AUTHOR
 
-Randy Stauner <rwstauner@cpan.org>
+Randy Stauner &lt;rwstauner@cpan.org>
 
 # CONTRIBUTOR
 
-Dave Rolsky <autarch@urth.org>
+Dave Rolsky &lt;autarch@urth.org>
 
 # COPYRIGHT AND LICENSE
 

@@ -8,7 +8,7 @@ Dist::Zilla::Plugin::Test::Pod::No404s - Add author tests for POD HTTP links
 
 # VERSION
 
-version 1.003
+version 1.004
 
 # SYNOPSIS
 
@@ -72,11 +72,11 @@ progress on the request by the system.
 
 # AUTHOR
 
-Randy Stauner &lt;rwstauner@cpan.org>
+Randy Stauner <rwstauner@cpan.org>
 
 # CONTRIBUTOR
 
-Dave Rolsky &lt;autarch@urth.org>
+Dave Rolsky <autarch@urth.org>
 
 # COPYRIGHT AND LICENSE
 
